@@ -92,7 +92,7 @@ anicoke-site/
 
 1. Клонируйте репозиторий:
    ```bash
-   git clone https://github.com/nekoulik/anicoke-site.git
+   git clone https://github.com/nekoulik/club-anicoke
    cd anicoke-site
    ```
 2. Откройте `index.html` в любом современном браузере.
@@ -126,13 +126,13 @@ npx live-server
    git add .
    git commit -m "✨ Initial commit: Club Anicoke"
    git branch -M main
-   git remote add origin https://github.com/nekoulik/anicoke-site.git
+   git remote add origin https://github.com/nekoulik/club-anicoke.git
    git push -u origin main
    ```
 3. В репозитории: **Settings → Pages → Source → Branch: main → Save**
 4. Через 1–2 минуты сайт будет доступен по адресу:
    ```
-   https://nekoulik.github.io/anicoke-site/
+   https://github.com/nekoulik/club-anicoke
    ```
 
 ---
