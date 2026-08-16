@@ -132,7 +132,7 @@ npx live-server
 3. В репозитории: **Settings → Pages → Source → Branch: main → Save**
 4. Через 1–2 минуты сайт будет доступен по адресу:
    ```
-   https://github.com/nekoulik/club-anicoke
+   https://nekoulik.github.io/club-anicoke/
    ```
 
 ---
@@ -168,7 +168,7 @@ npx live-server
 | 🎧 [AniWave / Anime Radio](https://nekoulik.github.io/anime-radio/) | Полноценное аниме-радио с 8 станциями, эквалайзером и PWA |
 | 🤖 [VK игровой бот](https://vk.ru/anicoke) | Бот для сообщества в Вконтакте |
 | 😹 [Редактор мемов](https://nekoulik.github.io/club-anicoke-meme-editor/) | Веб-редактор мемов клуба |
-| 💻 [GitHub](https://github.com/nekoulik/anicoke-site) | Исходники этого проекта |
+| 💻 [GitHub](https://nekoulik.github.io/club-anicoke) | Исходники этого проекта |
 
 ---
 
