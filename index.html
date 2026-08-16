@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Club Anicoke — аниме-клуб караоке</title>
+    <meta name="description"
+        content="Club Anicoke — уютный аниме-клуб: караоке, видеоигры, проекты и встречи под полной луной. 🌸" />
+    <link rel="icon"
+        href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'><defs><linearGradient id='g' x1='0' y1='0' x2='1' y2='1'><stop offset='0' stop-color='%23ffdcea'/><stop offset='.55' stop-color='%23ff8fc8'/><stop offset='1' stop-color='%23ff5fa8'/></linearGradient></defs><g fill='url(%23g)'><path d='M12 2.2c1.9 2.4 2.8 4.8 2.8 6.9 0 2.4-1.3 4-2.8 4s-2.8-1.6-2.8-4c0-2.1.9-4.5 2.8-6.9z'/><path d='M12 2.2c1.9 2.4 2.8 4.8 2.8 6.9 0 2.4-1.3 4-2.8 4s-2.8-1.6-2.8-4c0-2.1.9-4.5 2.8-6.9z' transform='rotate(72 12 12)'/><path d='M12 2.2c1.9 2.4 2.8 4.8 2.8 6.9 0 2.4-1.3 4-2.8 4s-2.8-1.6-2.8-4c0-2.1.9-4.5 2.8-6.9z' transform='rotate(144 12 12)'/><path d='M12 2.2c1.9 2.4 2.8 4.8 2.8 6.9 0 2.4-1.3 4-2.8 4s-2.8-1.6-2.8-4c0-2.1.9-4.5 2.8-6.9z' transform='rotate(216 12 12)'/><path d='M12 2.2c1.9 2.4 2.8 4.8 2.8 6.9 0 2.4-1.3 4-2.8 4s-2.8-1.6-2.8-4c0-2.1.9-4.5 2.8-6.9z' transform='rotate(288 12 12)'/></g><circle cx='12' cy='12' r='2.1' fill='%23fff'/></svg>" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@400;700&family=Nunito:wght@400;600;800&display=swap"
+        rel="stylesheet" />
+    <link rel="stylesheet" href="css/style.css" />
+</head>
+
+<body>
+
+    <!-- ИНТРО-ЗАСТАВКА -->
+    <div id="intro">
+        <div class="intro-box">
+            <svg class="intro-sakura" viewBox="0 0 24 24" aria-hidden="true">
+                <defs>
+                    <linearGradient id="introGrad" x1="0" y1="0" x2="1" y2="1">
+                        <stop offset="0%" stop-color="#ffdcea" />
+                        <stop offset="55%" stop-color="#ff8fc8" />
+                        <stop offset="100%" stop-color="#ff5fa8" />
+                    </linearGradient>
+                    <path id="introPetal"
+                        d="M12 2.2c1.9 2.4 2.8 4.8 2.8 6.9 0 2.4-1.3 4-2.8 4s-2.8-1.6-2.8-4c0-2.1.9-4.5 2.8-6.9z" />
+                </defs>
+                <g fill="url(#introGrad)">
+                    <use href="#introPetal" />
+                    <use href="#introPetal" transform="rotate(72 12 12)" />
+                    <use href="#introPetal" transform="rotate(144 12 12)" />
+                    <use href="#introPetal" transform="rotate(216 12 12)" />
+                    <use href="#introPetal" transform="rotate(288 12 12)" />
+                </g>
+                <circle cx="12" cy="12" r="2.1" fill="#fff" opacity=".9" />
+            </svg>
+            <h1 class="intro-title">Club <span>Anicoke</span></h1>
+            <p class="intro-sub">аниме • караоке • игры • общение</p>
+            <div class="intro-bar">
+                <div id="introFill"></div>
+            </div>
+            <p class="intro-status" id="introStatus">Загрузка… 0%</p>
+            <button class="intro-btn" id="introBtn">🌸 Войти на сайт</button>
+        </div>
+
+        <!-- Сцена внизу заставки -->
+        <div class="intro-scene"></div>
+    </div>
+
+    <div id="stars"></div>
+    <div id="petals"></div>
+
+    <header class="nav">
+        <a class="logo" href="#home">
+            <svg class="logo-icon" viewBox="0 0 24 24" aria-hidden="true">
+                <defs>
+                    <linearGradient id="logoGrad" x1="0" y1="0" x2="1" y2="1">
+                        <stop offset="0%" stop-color="#ffdcea" />
+                        <stop offset="55%" stop-color="#ff8fc8" />
+                        <stop offset="100%" stop-color="#ff5fa8" />
+                    </linearGradient>
+                    <path id="logoPetal"
+                        d="M12 2.2c1.9 2.4 2.8 4.8 2.8 6.9 0 2.4-1.3 4-2.8 4s-2.8-1.6-2.8-4c0-2.1.9-4.5 2.8-6.9z" />
+                </defs>
+                <g fill="url(#logoGrad)">
+                    <use href="#logoPetal" />
+                    <use href="#logoPetal" transform="rotate(72 12 12)" />
+                    <use href="#logoPetal" transform="rotate(144 12 12)" />
+                    <use href="#logoPetal" transform="rotate(216 12 12)" />
+                    <use href="#logoPetal" transform="rotate(288 12 12)" />
+                </g>
+                <circle cx="12" cy="12" r="2.1" fill="#fff" opacity=".9" />
+            </svg>
+            Club Anicoke
+        </a>
+        <button class="burger" id="burger" aria-label="Меню">☰</button>
+        <ul class="nav-links" id="navLinks">
+            <li><a href="#home">Главная</a></li>
+            <li><a href="#projects">Наши проекты</a></li>
+            <li><a href="#gallery">Галерея</a></li>
+            <li><a href="#activities">Активности</a></li>
+            <li><a href="#about">О клубе</a></li>
+            <li><a href="#contacts">Контакты</a></li>
+        </ul>
+    </header>
+
+    <!-- ГЛАВНАЯ -->
+    <div class="hero" id="home">
+
+        <!-- Мини-радио Anicoke FM -->
+        <div class="radio-player" id="radioPlayer">
+            <button class="rp-btn" id="rpPrev" aria-label="Предыдущая станция">«</button>
+            <button class="rp-btn rp-play" id="rpPlay" aria-label="Слушать / стоп">►</button>
+            <button class="rp-btn" id="rpNext" aria-label="Следующая станция">»</button>
+            <span class="rp-name" id="rpName">Anime</span>
+        </div>
+
+        <span class="hero-tag">🌸 аниме • 📻 радио • игры • общение</span>
+        <a class="hero-arrow" href="#projects">▼</a>
+    </div>
+
+    <!-- НАШИ ПРОЕКТЫ -->
+    <section id="projects" class="reveal">
+        <h2 class="title">
+            <svg class="title-icon" viewBox="0 0 24 24" aria-hidden="true">
+                <defs>
+                    <linearGradient id="sparkGrad" x1="0" y1="0" x2="1" y2="1">
+                        <stop offset="0%" stop-color="#8fe9ff" />
+                        <stop offset="100%" stop-color="#ff5fa8" />
+                    </linearGradient>
+                </defs>
+                <path fill="url(#sparkGrad)" d="M12 1.5l2.7 7.1 7.1 2.7-7.1 2.7-2.7 7.1-2.7-7.1L2.2 11.3l7.1-2.7z" />
+                <path fill="url(#sparkGrad)" opacity=".85"
+                    d="M19.5 15.5l1.2 3.1 3.1 1.2-3.1 1.2-1.2 3.1-1.2-3.1-3.1-1.2 3.1-1.2z" />
+            </svg>
+            Наши проекты
+        </h2>
+        <p class="subtitle">Нажимай на карточку — и ты на сайте проекта! 😉</p>
+        <div class="projects">
+
+            <a class="project" href="https://nekoulik.github.io/anime-radio/" target="_blank" rel="noopener">
+                <img src="img/project-radio.jpg" alt="Anime Radio" />
+                <span class="project-link">Открыть сайт →</span>
+            </a>
+
+            <a class="project" href="https://vk.ru/anicoke" target="_blank" rel="noopener">
+                <img src="img/project-vk.jpg" alt="VK игровой бот" />
+                <span class="project-link">Открыть сайт →</span>
+            </a>
+
+            <a class="project" href="https://nekoulik.github.io/club-anicoke-meme-editor/" target="_blank"
+                rel="noopener">
+                <img src="img/project-memes.jpg" alt="Редактор мемов" />
+                <span class="project-link">Открыть сайт →</span>
+            </a>
+
+        </div>
+    </section>
+
+    <!-- ГАЛЕРЕЯ -->
+    <section id="gallery" class="reveal">
+        <h2 class="title">
+            <svg class="title-icon" viewBox="0 0 24 24" aria-hidden="true">
+                <defs>
+                    <linearGradient id="photoGrad" x1="0" y1="0" x2="1" y2="1">
+                        <stop offset="0%" stop-color="#8fe9ff" />
+                        <stop offset="100%" stop-color="#ff5fa8" />
+                    </linearGradient>
+                </defs>
+                <path fill="url(#photoGrad)"
+                    d="M21 19V5c0-1.1-.9-2-2-2H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2zM8.5 13.5l2.5 3.01L14.5 12l4.5 6H5l3.5-4.5z" />
+                <circle cx="8" cy="8" r="1.7" fill="#fff" opacity=".85" />
+            </svg>
+            Галерея
+        </h2>
+        <p class="subtitle">Листай стрелками, колесом или тяни ленту мышкой! 😉</p>
+
+        <!-- Большое окно: показывает текущую картинку -->
+        <div class="g-stage">
+            <img id="gStageImg" src="img/gallery-karaoke.jpg" alt="Караоке-вечер" />
+            <div class="g-stage-cap" id="gStageCap">Караоке-вечер 🎤</div>
+        </div>
+
+        <!-- Лента ниже -->
+        <div class="gallery-wrap">
+            <button class="g-btn g-prev" id="gPrev" aria-label="Прокрутить назад">‹</button>
+            <div class="gallery" id="galleryRow">
+                <div class="g-item"><img src="img/gallery-karaoke.jpg" alt="Караоке-вечер" />
+                    <div class="g-cap">Караоке-вечер 🎤</div>
+                </div>
+                <div class="g-item"><img src="img/gallery-games.jpg" alt="Турнир по файтингам" />
+                    <div class="g-cap">Игровой турнир 🎮</div>
+                </div>
+                <div class="g-item"><img src="img/gallery-cosplay.jpg" alt="Косплей-вечер" />
+                    <div class="g-cap">Косплей-вечер 🎭</div>
+                </div>
+                <div class="g-item"><img src="img/gallery-duet.jpg" alt="Дуэт под звёздами" />
+                    <div class="g-cap">Дуэт под звёздами 🎶</div>
+                </div>
+                <div class="g-item"><img src="img/gallery-tea.jpg" alt="Сладкое и чай" />
+                    <div class="g-cap">Сладкое и чай 🍡</div>
+                </div>
+                <div class="g-item"><img src="img/gallery-festival.jpg" alt="Аниме-фестиваль" />
+                    <div class="g-cap">Аниме-фестиваль 🎆</div>
+                </div>
+                <div class="g-item"><img src="img/gallery-lofi.jpg" alt="Lo-fi и chill" />
+                    <div class="g-cap">Lo-fi &amp; Chill 🎧</div>
+                </div>
+                <div class="g-item"><img src="img/gallery-craft.jpg" alt="Косплей-мастерская" />
+                    <div class="g-cap">Косплей-мастерская ✂️</div>
+                </div>
+                <div class="g-item"><img src="img/gallery-picnic.jpg" alt="Пикник под сакурой" />
+                    <div class="g-cap">Пикник под сакурой 🌸</div>
+                </div>
+                <div class="g-item"><img src="img/gallery-cinema.jpg" alt="Кино-вечер" />
+                    <div class="g-cap">Кино-вечер 📺</div>
+                </div>
+            </div>
+            <button class="g-btn g-next" id="gNext" aria-label="Прокрутить вперёд">›</button>
+        </div>
+    </section>
+
+    <!-- АКТИВНОСТИ -->
+    <section id="activities" class="reveal">
+        <h2 class="title">
+            <svg class="title-icon" viewBox="0 0 24 24" aria-hidden="true">
+                <defs>
+                    <linearGradient id="heartGrad" x1="0" y1="0" x2="1" y2="1">
+                        <stop offset="0%" stop-color="#ff8fc8" />
+                        <stop offset="100%" stop-color="#a06bff" />
+                    </linearGradient>
+                </defs>
+                <path fill="url(#heartGrad)"
+                    d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z" />
+                <circle cx="8.2" cy="8" r="1.6" fill="#fff" opacity=".8" />
+            </svg>
+            Чем мы занимаемся
+        </h2>
+        <p class="subtitle">Восемь причин заглянуть к нам</p>
+        <div class="cards">
+            <div class="card">
+                <div class="icon">🎤</div>
+                <h3>Аниме-караоке</h3>
+                <p>Поём опенинги и эндинги — от классики до свежих сезонов. Дуэты и батлы приветствуются!</p>
+            </div>
+            <div class="card">
+                <div class="icon">🎮</div>
+                <h3>Видеоигры</h3>
+                <p>Кооперативы, файтинги и турниры на нашем легендарном диване. Геймпады уже заряжены.</p>
+            </div>
+            <div class="card">
+                <div class="icon">🎭</div>
+                <h3>Косплей-вечера</h3>
+                <p>Приходи в образе любимого персонажа — ушки и хвостики выдаём на входе!</p>
+            </div>
+            <div class="card">
+                <div class="icon">🌸</div>
+                <h3>Обсуждения аниме</h3>
+                <p>Спорим о сюжетах, составляем топы и выбираем, что смотреть всей компанией.</p>
+            </div>
+            <div class="card">
+                <div class="icon">🎧</div>
+                <h3>Lo-fi &amp; Chill</h3>
+                <p>Спокойные вечера с плейлистами, рисованием и разговорами до самого рассвета.</p>
+            </div>
+            <div class="card">
+                <div class="icon">🍡</div>
+                <h3>Сладкое и чай</h3>
+                <p>Японские снеки, рамэн и тайяки на каждой встрече. Голодным не уходит никто!</p>
+            </div>
+            <div class="card">
+                <div class="icon">💬</div>
+                <h3>Общение в соцсетях</h3>
+                <p>Наш чат не спит: мемы, арты, обсуждение серий и поддержка 24/7 в Discord, VK и Telegram.</p>
+            </div>
+            <div class="card">
+                <div class="icon">🤝</div>
+                <h3>Реальные встречи</h3>
+                <p>Выбираемся и офлайн: пикники под сакурой, кино-вечера и походы на аниме-фестивали всей компанией.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- О КЛУБЕ -->
+    <section id="about" class="reveal">
+        <h2 class="title">
+            <svg class="title-icon" viewBox="0 0 24 24" aria-hidden="true">
+                <defs>
+                    <linearGradient id="sakuraGrad" x1="0" y1="0" x2="1" y2="1">
+                        <stop offset="0%" stop-color="#ffdcea" />
+                        <stop offset="55%" stop-color="#ff8fc8" />
+                        <stop offset="100%" stop-color="#ff5fa8" />
+                    </linearGradient>
+                    <path id="sakuraPetal"
+                        d="M12 2.2c1.9 2.4 2.8 4.8 2.8 6.9 0 2.4-1.3 4-2.8 4s-2.8-1.6-2.8-4c0-2.1.9-4.5 2.8-6.9z" />
+                </defs>
+                <g fill="url(#sakuraGrad)">
+                    <use href="#sakuraPetal" />
+                    <use href="#sakuraPetal" transform="rotate(72 12 12)" />
+                    <use href="#sakuraPetal" transform="rotate(144 12 12)" />
+                    <use href="#sakuraPetal" transform="rotate(216 12 12)" />
+                    <use href="#sakuraPetal" transform="rotate(288 12 12)" />
+                </g>
+                <circle cx="12" cy="12" r="2.1" fill="#fff" opacity=".9" />
+            </svg>
+            О клубе
+        </h2>
+        <p class="subtitle">Кто мы и почему у нас уютно</p>
+        <div class="about-grid">
+            <div class="about-text">
+                <p><span class="accent">Club Anicoke</span> — это уютное сообщество для тех, кто любит аниме, караоке и
+                    видеоигры. Мы собираемся каждые выходные, чтобы петь опенинги до поздней ночи, проходить кооперативы
+                    на диване и обсуждать сезонные тайтлы. 🌙</p>
+                <p>Нет голоса? Не страшно! Главное — желание веселиться. У нас найдутся наушники для каждого, свободный
+                    геймпад и бесконечный запас снеков и хорошего настроения. 🎧</p>
+                <p>Заглядывай — под полной луной у нас всегда тепло, розово и немного волшебно. ✨</p>
+            </div>
+            <div class="about-img"><img src="img/room-pink.jpg" alt="Уютная комната Club Anicoke" /></div>
+        </div>
+    </section>
+
+    <!-- КОНТАКТЫ -->
+    <section id="contacts" class="reveal">
+        <h2 class="title">
+            <svg class="title-icon" viewBox="0 0 24 24" aria-hidden="true">
+                <defs>
+                    <linearGradient id="mailGrad" x1="0" y1="0" x2="1" y2="1">
+                        <stop offset="0%" stop-color="#8fe9ff" />
+                        <stop offset="100%" stop-color="#a06bff" />
+                    </linearGradient>
+                </defs>
+                <path fill="url(#mailGrad)"
+                    d="M4 6h16a2 2 0 0 1 2 2v10a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2z" />
+                <path fill="none" stroke="#fff" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"
+                    d="M3 7.5l9 6 9-6" opacity=".9" />
+                <path fill="#ff5fa8" transform="translate(13.8 -1.2) scale(.42)"
+                    d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z" />
+            </svg>
+            Контакты
+        </h2>
+        <p class="subtitle">Мы всегда на связи</p>
+
+        <div class="contacts-grid">
+
+            <!-- ОКНО 1: ВИДЕО -->
+            <div class="c-window">
+                <div class="c-window-title">🎬 Видео из жизни клуба</div>
+                <div class="c-video">
+                    <video controls preload="metadata">
+                        <source src="video/club.mp4" type="video/mp4" />
+                        Ваш браузер не поддерживает видео.
+                    </video>
+                </div>
+            </div>
+
+            <!-- ОКНО 2: КОНТАКТЫ -->
+            <div class="c-window">
+                <div class="c-window-title">💬 Как нас найти</div>
+                <div class="contacts">
+                    <a class="contact-card" href="https://vk.ru/anicoke" target="_blank" rel="noopener">
+                        <img src="img/contact-vk.jpg" alt="Вконтакте" />
+                        <div class="contact-cap">Вконтакте</div>
+                    </a>
+                    <a class="contact-card" href="https://github.com/nekoulik/anicoke-site" target="_blank"
+                        rel="noopener">
+                        <img src="img/contact-github.jpg" alt="GitHub" />
+                        <div class="contact-cap">GitHub</div>
+                    </a>
+                    <a class="contact-card" href="mailto:liluev83@vk.com">
+                        <img src="img/contact-mail.jpg" alt="Почта" />
+                        <div class="contact-cap">Почта</div>
+                    </a>
+                    <div class="contact-card contact-static">
+                        <img src="img/contact-subscribe.jpg" alt="Не забудь подписаться!" />
+                        <div class="contact-cap">Не забудь подписаться! 💖</div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <footer>© 2026 Club Anicoke • Сделано с <span class="heart">💖</span> и аниме</footer>
+
+    <script src="js/main.js"></script>
+</body>
+
+</html>
