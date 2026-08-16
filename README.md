@@ -168,7 +168,7 @@ npx live-server
 | 🎧 [AniWave / Anime Radio](https://nekoulik.github.io/anime-radio/) | Полноценное аниме-радио с 8 станциями, эквалайзером и PWA |
 | 🤖 [VK игровой бот](https://vk.ru/anicoke) | Бот для сообщества в Вконтакте |
 | 😹 [Редактор мемов](https://nekoulik.github.io/club-anicoke-meme-editor/) | Веб-редактор мемов клуба |
-| 💻 [GitHub](https://nekoulik.github.io/club-anicoke) | Исходники этого проекта |
+| 💻 [GitHub](https://github.com/nekoulik/club-anicoke?tab=readme-ov-file) | Исходники этого проекта |
 
 ---
 
