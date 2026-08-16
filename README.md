@@ -3,7 +3,7 @@
 > Уютный одностраничник для аниме-клуба: караоке, видеоигры, проекты и встречи под полной луной. ✨
 
 <p align="center">
-  <a href="https://nekoulik.github.io/anicoke-site/">🌐 Посмотреть сайт вживую</a> •
+  <a href="https://nekoulik.github.io/club-anicoke/">🌐 Посмотреть сайт вживую</a> •
   <a href="#-как-запустить-локально">🚀 Установка</a> •
   <a href="#-технологии">🛠 Технологии</a> •
   <a href="https://vk.ru/anicoke">💬 ВК-группа</a>
