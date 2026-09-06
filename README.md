@@ -170,7 +170,7 @@ npx live-server
 | 🤖 [VK игровой бот](https://vk.ru/anicoke) | Бот для сообщества в Вконтакте |
 | 😹 [Редактор мемов](https://nekoulik.github.io/club-anicoke-meme-editor/) | Веб-редактор мемов клуба |
 | 💻 [GitHub](https://github.com/nekoulik/club-anicoke.git) | Исходники этого проекта |
-| 📻 [Radio App](https://github.com/nekoulik/radio-app) | Приложение-радио клуба: станции, эквалайзер и мини-плеер |
+| 📻 [Radio App](https://vk.com/app54729099) | Приложение-радио клуба: станции, эквалайзер и мини-плеер |
 
 ---
 
