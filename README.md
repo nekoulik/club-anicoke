@@ -66,6 +66,7 @@ anicoke-site/
 │   ├── project-radio.jpg      # карточка проекта Anime Radio
 │   ├── project-vk.jpg         # карточка VK бота
 │   ├── project-memes.jpg      # карточка редактора мемов
+│   ├── project-app.jpg        # карточка Radio App
 │   ├── gallery-karaoke.jpg    # караоке-вечер
 │   ├── gallery-games.jpg      # турнир по файтингам
 │   ├── gallery-cosplay.jpg    # косплей-вечер
@@ -169,6 +170,7 @@ npx live-server
 | 🤖 [VK игровой бот](https://vk.ru/anicoke) | Бот для сообщества в Вконтакте |
 | 😹 [Редактор мемов](https://nekoulik.github.io/club-anicoke-meme-editor/) | Веб-редактор мемов клуба |
 | 💻 [GitHub](https://github.com/nekoulik/club-anicoke.git) | Исходники этого проекта |
+| 📻 [Radio App](https://github.com/nekoulik/radio-app) | Приложение-радио клуба: станции, эквалайзер и мини-плеер |
 
 ---
 
